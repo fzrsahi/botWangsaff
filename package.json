@@ -1,0 +1,22 @@
+{
+  "name": "13-botwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cli-color": "^2.0.3",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20",
+    "openai": "^3.1.0",
+    "openapi": "^1.0.1",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.19.3"
+  }
+}

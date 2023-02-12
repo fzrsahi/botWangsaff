@@ -1,1 +1,2 @@
-bot wangsaff
+npm install
+npm start
