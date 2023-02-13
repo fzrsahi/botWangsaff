@@ -17,6 +17,8 @@
     "openai": "^3.1.0",
     "openapi": "^1.0.1",
     "qrcode-terminal": "^0.12.0",
+    "sharp": "^0.31.3",
+    "webp-converter": "^2.3.3",
     "whatsapp-web.js": "^1.19.3"
   }
 }

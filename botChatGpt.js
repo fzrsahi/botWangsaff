@@ -8,8 +8,8 @@ async function example(textWhatsapp) {
   const response = await openai.createCompletion({
     model: "text-davinci-003",
     prompt: textWhatsapp,
-    max_tokens: 2000,
-    temperature: 0.1,
+    max_tokens: 100,
+    temperature: 0,
   });
   return response.data.choices[0].text;
 }

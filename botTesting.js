@@ -1,6 +1,6 @@
 const botGpt = require("./botChatGpt");
 botGpt(
-  "misalkan variabel nomor berisi array.buatkan regex untuk mengambil semua nilai dalam array kecuali index ke 0"
+  "buatkan 5 vocabulary tentang tidur"
 )
   .then((result) => {
     console.log(result);
