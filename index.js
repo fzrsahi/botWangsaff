@@ -24,29 +24,14 @@ client.on("message", async (message) => {
 client.on("message", (msg) => {
   const result = msg.body.split(" ");
   if (result[0] === "@bot") {
-    const messageBody = msg.body.replace("@bot", "");
+    const messageBody = msg.body.substring(5);
     console.log(messageBody);
     botGpt(messageBody).then((result) => {
+      const resultFix = result.substring(3).trimStart();
+      console.log(resultFix);
       msg.reply(result);
     });
     // msg.reply("bo orang ganteng yang bisa ba pake ini bot");
   }
 });
-// client.on("message", (message) => {
-//   if (message.body === "!halo") {
-//     console.log(`dari ${message.notifyName}`);
-//     message.reply("halo jek");
-//   } else if (message.body === "yoo") {
-//     message.reply("halo juga");
-//   } else if (message.body === "ajul") {
-//     message.reply("joww");
-//   }
-// });
-
-// client.on("message", (message) => {
-//   if (message.body === "!ping") {
-//     client.sendMessage(message.from, "pong");
-//   }
-// });
-
 client.initialize();
